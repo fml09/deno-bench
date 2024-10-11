@@ -61,7 +61,7 @@ jobs:
           path: frameworks/*/results/hello_bench.json
           key: 'hello_bench-results-${{ github.run_id }}'
       - name: Install Deno
-        uses: denoland/setup-deno@v1
+        uses: denoland/setup-deno@v2
       - name: Generate README.md
         run: deno task readme
       - name: Push changes
